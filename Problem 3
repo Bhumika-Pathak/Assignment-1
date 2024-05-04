@@ -1,0 +1,11 @@
+def order(orders):
+    print("Preparing your orders:")
+    for order in orders:
+        print("Preparing your Order -", order)
+
+    print("\nThe following orders have been dispatched:")
+    for order in orders:
+        print(order)
+
+orders = ["kadhai paneer", "tandori roti", "salad"]
+order(orders)
