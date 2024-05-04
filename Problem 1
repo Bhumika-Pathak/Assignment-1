@@ -1,16 +1,16 @@
-def get_tshirt():
+def get_tshirt(brand):
     def get_name():
-        n = input()
+        n = input("Enter your name: ")
         return n
     
     user_name = get_name()
     
-    sizes = ["S", "M", "L", "XL"]
-    size_want = input("Enter the size you want (S, M, L, XL): ")
-    
-    if size_want in sizes:
-        print("Hi, ", user_name , "the size you are looking for is available in our store")
+    if brand == "HNM":
+        print("Hi, ", user_name , "you've chosen Adidas. It's available in our store.")
+   
     else:
-        print("Hi," , user_name , "unfortunately the size you are looking for is not available in our store")
+        print("Hi," , user_name , "unfortunately the brand you are looking for is not available in our store")
 
-get_tshirt()
+brand_choice = input("Enter the brand you are looking for: ")
+get_tshirt(brand_choice)
+
